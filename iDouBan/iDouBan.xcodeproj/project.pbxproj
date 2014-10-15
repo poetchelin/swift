@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D274FFA819EC9DA700A84855 /* HttpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D274FFA719EC9DA700A84855 /* HttpController.swift */; };
 		D2AB89AE19EC5F030066586C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AB89AD19EC5F030066586C /* AppDelegate.swift */; };
 		D2AB89B019EC5F030066586C /* PlayListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AB89AF19EC5F030066586C /* PlayListController.swift */; };
 		D2AB89B319EC5F030066586C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2AB89B119EC5F030066586C /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 		D2AB89B819EC5F030066586C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2AB89B619EC5F030066586C /* LaunchScreen.xib */; };
 		D2AB89C419EC5F040066586C /* iDouBanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AB89C319EC5F040066586C /* iDouBanTests.swift */; };
 		D2AB89CE19EC62E80066586C /* MusicSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AB89CD19EC62E80066586C /* MusicSectionController.swift */; };
+		D2D4CFDE19EE2E0C009C23CD /* detail.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D2D4CFDD19EE2E0C009C23CD /* detail.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D274FFA719EC9DA700A84855 /* HttpController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpController.swift; sourceTree = "<group>"; };
 		D2AB89A819EC5F030066586C /* iDouBan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDouBan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2AB89AC19EC5F030066586C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2AB89AD19EC5F030066586C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +41,7 @@
 		D2AB89C219EC5F040066586C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2AB89C319EC5F040066586C /* iDouBanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iDouBanTests.swift; sourceTree = "<group>"; };
 		D2AB89CD19EC62E80066586C /* MusicSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicSectionController.swift; sourceTree = "<group>"; };
+		D2D4CFDD19EE2E0C009C23CD /* detail.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = detail.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +83,10 @@
 		D2AB89AA19EC5F030066586C /* iDouBan */ = {
 			isa = PBXGroup;
 			children = (
+				D2D4CFDD19EE2E0C009C23CD /* detail.jpg */,
 				D2AB89AD19EC5F030066586C /* AppDelegate.swift */,
 				D2AB89AF19EC5F030066586C /* PlayListController.swift */,
+				D274FFA719EC9DA700A84855 /* HttpController.swift */,
 				D2AB89CD19EC62E80066586C /* MusicSectionController.swift */,
 				D2AB89B119EC5F030066586C /* Main.storyboard */,
 				D2AB89B419EC5F030066586C /* Images.xcassets */,
@@ -195,6 +201,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2D4CFDE19EE2E0C009C23CD /* detail.jpg in Resources */,
 				D2AB89B319EC5F030066586C /* Main.storyboard in Resources */,
 				D2AB89B819EC5F030066586C /* LaunchScreen.xib in Resources */,
 				D2AB89B519EC5F030066586C /* Images.xcassets in Resources */,
@@ -218,6 +225,7 @@
 				D2AB89CE19EC62E80066586C /* MusicSectionController.swift in Sources */,
 				D2AB89B019EC5F030066586C /* PlayListController.swift in Sources */,
 				D2AB89AE19EC5F030066586C /* AppDelegate.swift in Sources */,
+				D274FFA819EC9DA700A84855 /* HttpController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +417,7 @@
 				D2AB89C919EC5F040066586C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D2AB89CA19EC5F040066586C /* Build configuration list for PBXNativeTarget "iDouBanTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +426,7 @@
 				D2AB89CC19EC5F040066586C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
