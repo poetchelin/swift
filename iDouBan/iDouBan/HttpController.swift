@@ -16,7 +16,7 @@ class HttpController: NSObject {
     var delegate: HttpProtocol?
     
     func onSearch(url: String) {
-        var nsUrl: NSURL = NSURL(string: url)
+        var nsUrl: NSURL = NSURL(string: url)!
         
         var request: NSURLRequest = NSURLRequest(URL: nsUrl)
         
