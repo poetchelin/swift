@@ -12,7 +12,7 @@ class MusicSectionController: UITableViewController,HttpProtocol {
     
     let musicSectionURL = "http://www.douban.com/j/app/radio/channels"
     
-    var musicInSection = "http://douban.fm/j/mine/playlist?channel="
+    var musicInSection = "http://www.douban.com/j/app/radio/people?app_name=radio_desktop_win&version=100&user_id=&expire=&token=&sid=&h=&channel="
     
     var musicSection: NSArray = NSArray()
     
@@ -51,9 +51,7 @@ class MusicSectionController: UITableViewController,HttpProtocol {
 		let row: Character = Character(UnicodeScalar(indexPath.row))
         
         //load selected data
-		var resultURL = musicInSection + "\(indexPath.row)"
-		
-		//println(resultURL)
+		var resultURL = musicInSection + "\(indexPath.row)&type=n"
 		
 		//update playList
 		musicLoader?.didLoad(resultURL)
@@ -64,7 +62,7 @@ class MusicSectionController: UITableViewController,HttpProtocol {
     func didReceiveResults(result: NSDictionary) {
         if (result["channels"] != nil) {
             self.musicSection = result["channels"]! as NSArray
-            println(self.musicSection.count)
+
             self.tableView.reloadData()
             
         }

@@ -5,24 +5,6 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="5ra-wi-fFJ">
-            <objects>
-                <viewController id="d18-zb-KBJ" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Ke5-vP-x6d"/>
-                        <viewControllerLayoutGuide type="bottom" id="7U8-0t-2UN"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="r6W-FX-c8c">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="evH-Tb-56x" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="263" y="-176"/>
-        </scene>
         <!--DouBan FM-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
@@ -48,7 +30,7 @@
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="q0L-Cu-Usm">
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="q0L-Cu-Usm">
                                         <rect key="frame" x="59" y="22" width="482" height="2"/>
                                     </progressView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K5R-kj-Hpu">
@@ -74,7 +56,7 @@
                                 <rect key="frame" x="0.0" y="265" width="600" height="335"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="playingList" id="gjm-xG-fgy">
+                                    <tableViewCell contentMode="scaleToFill" restorationIdentifier="songs" selectionStyle="default" indentationWidth="10" reuseIdentifier="playingList" id="gjm-xG-fgy">
                                         <rect key="frame" x="0.0" y="0.0" width="568" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gjm-xG-fgy" id="yNT-Es-Lti">
@@ -87,21 +69,39 @@
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="ud0-Qb-3zo"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X7u-m0-c1r">
+                                <rect key="frame" x="0.0" y="64" width="600" height="154"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="0.76000000000000001" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="player_pause.png"/>
+                                <connections>
+                                    <action selector="controlClicked:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="E6P-gZ-rAc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="LKd-MT-JRA" firstAttribute="top" secondItem="X7u-m0-c1r" secondAttribute="bottom" id="3Sl-sN-85M"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="h9i-DU-Pdy" secondAttribute="bottom" constant="336" id="82L-KI-V4z"/>
                             <constraint firstItem="h9i-DU-Pdy" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="88w-2V-X8P"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="X7u-m0-c1r" secondAttribute="trailing" constant="-16" id="BXC-XI-qGY"/>
                             <constraint firstItem="ztd-9I-Ffz" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="GCw-us-jSr"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="ztd-9I-Ffz" secondAttribute="bottom" id="Hal-OJ-iPZ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="h9i-DU-Pdy" secondAttribute="trailing" constant="-16" id="LJR-aM-8Ck"/>
                             <constraint firstItem="ztd-9I-Ffz" firstAttribute="top" secondItem="h9i-DU-Pdy" secondAttribute="bottom" constant="1" id="NWH-kV-NJL"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ztd-9I-Ffz" secondAttribute="trailing" constant="-16" id="cxj-Mq-OHa"/>
                             <constraint firstItem="h9i-DU-Pdy" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="hBr-py-Vng"/>
+                            <constraint firstItem="X7u-m0-c1r" firstAttribute="bottom" secondItem="h9i-DU-Pdy" secondAttribute="bottom" id="jqR-xl-YIl"/>
+                            <constraint firstItem="X7u-m0-c1r" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="pVW-Jb-z8N"/>
                             <constraint firstItem="LKd-MT-JRA" firstAttribute="bottom" secondItem="h9i-DU-Pdy" secondAttribute="bottom" id="qLU-Ts-W8j"/>
                             <constraint firstItem="LKd-MT-JRA" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="rsp-vc-8As"/>
+                            <constraint firstItem="X7u-m0-c1r" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="sEc-Oy-xGT"/>
                             <constraint firstAttribute="trailingMargin" secondItem="LKd-MT-JRA" secondAttribute="trailing" constant="-16" id="xBK-Gg-ofG"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="jqR-xl-YIl"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="DouBan FM" id="NN7-8R-Lk9">
                         <barButtonItem key="rightBarButtonItem" title="Channel" id="Fd7-Qf-VL0">
@@ -111,8 +111,12 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="controlButton" destination="X7u-m0-c1r" id="MuQ-7f-IL2"/>
                         <outlet property="cover" destination="h9i-DU-Pdy" id="w2F-gc-fcH"/>
                         <outlet property="playingListTable" destination="ztd-9I-Ffz" id="OXb-te-NcD"/>
+                        <outlet property="progress" destination="q0L-Cu-Usm" id="2DL-TZ-bGS"/>
+                        <outlet property="ranTime" destination="K5R-kj-Hpu" id="08C-0T-uvn"/>
+                        <outlet property="restTime" destination="43D-WM-7tp" id="QAu-3d-efD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -167,4 +171,7 @@
             <point key="canvasLocation" x="939" y="1053"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="player_pause.png" width="128" height="128"/>
+    </resources>
 </document>
