@@ -17,6 +17,8 @@ class HttpController: NSObject {
     
     func onSearch(url: String) {
         var nsUrl: NSURL = NSURL(string: url)!
+		
+		println(nsUrl)
         
         var request: NSURLRequest = NSURLRequest(URL: nsUrl)
         

@@ -87,50 +87,47 @@ class PlayListController: UIViewController,UITableViewDataSource, UITableViewDel
         // Dispose of any resources that can be recreated.
     }
 	
-	
-	func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-		return playList.count
-	}
-    
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
-    }
-	
-	func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-		return "song"
+	func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+		return self.playList.count
 	}
 	
+	func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+		return 144
+	}
 	
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "songs")
+		
+		let identifier: String = "song"
+		
+		var nib: UINib = UINib(nibName: "CustomerTableViewCell", bundle: nil)
+		
+		self.playingListTable.registerNib(nib, forCellReuseIdentifier: identifier)
+		
+		var cell: CustomerTableViewCell? = self.playingListTable.dequeueReusableCellWithIdentifier(identifier) as? CustomerTableViewCell
+		
+        let song: NSDictionary = playList[indexPath.row] as NSDictionary
         
-        let song: NSDictionary = playList[indexPath.section] as NSDictionary
-        
-        cell.textLabel.text = (song["title"] as String)
-        cell.detailTextLabel?.text = (song["artist"] as String)
-        cell.imageView.image = UIImage(named: "detail.jpg")
+        cell!.title.text = (song["title"] as String)
+        cell!.singer.text = (song["artist"] as String)
+        cell!.cover.image = UIImage(named: "detail.jpg")
         
         let picURL = song["picture"] as String
         
         let image  = self.imageCache[picURL]
         
         if image == nil {
-            checkAndUpdateImage(picURL, cell: cell)
+            checkAndUpdateImage(picURL, cell: cell!)
         }else {
-            cell.imageView.image = image
+            cell!.cover.image = image
         }
         
         
-        return cell
+        return cell!
     }
 	
-	func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-		return 176
-	}
-	
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let song: NSDictionary = playList[indexPath.section] as NSDictionary
+        let song: NSDictionary = playList[indexPath.row] as NSDictionary
 		
 		updateCoverAndTitle(picURL: song["picture"] as String, titleURL: song["title"] as String)
         
@@ -227,7 +224,7 @@ class PlayListController: UIViewController,UITableViewDataSource, UITableViewDel
 		timer?.fireDate = NSDate()
 	}
 	
-    private func checkAndUpdateImage(picURL: String, cell: UITableViewCell) {
+    private func checkAndUpdateImage(picURL: String, cell: CustomerTableViewCell) {
         let realURL: NSURL = NSURL(string: picURL)!
         let request: NSURLRequest = NSURLRequest(URL: realURL)
         
@@ -235,7 +232,7 @@ class PlayListController: UIViewController,UITableViewDataSource, UITableViewDel
         NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue(), completionHandler: {(response: NSURLResponse!, data: NSData!, error: NSError!) -> Void in
             let img = UIImage(data: data)
             
-            cell.imageView.image = img
+            cell.cover.image = img
             
             self.imageCache[picURL] = img
         })

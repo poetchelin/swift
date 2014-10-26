@@ -52,18 +52,9 @@
                                     <constraint firstAttribute="height" constant="46" id="hsi-87-JFa"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="ztd-9I-Ffz">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="ztd-9I-Ffz">
                                 <rect key="frame" x="0.0" y="265" width="600" height="335"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" restorationIdentifier="songs" selectionStyle="default" indentationWidth="10" reuseIdentifier="playingList" id="gjm-xG-fgy">
-                                        <rect key="frame" x="0.0" y="0.0" width="568" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gjm-xG-fgy" id="yNT-Es-Lti">
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="vXZ-lx-hvc" id="DKi-JH-P9g"/>
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="ud0-Qb-3zo"/>
@@ -153,7 +144,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="section" selectionStyle="default" indentationWidth="10" id="G98-0y-Zno">
+                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="section" selectionStyle="default" indentationWidth="10" reuseIdentifier="section" id="G98-0y-Zno">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="G98-0y-Zno" id="g6G-uZ-Avl">
                                     <autoresizingMask key="autoresizingMask"/>
