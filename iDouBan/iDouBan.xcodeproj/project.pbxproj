@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D24D4AFA1A000D9500AB0237 /* StrUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24D4AF91A000D9500AB0237 /* StrUtil.swift */; };
 		D274FFA819EC9DA700A84855 /* HttpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D274FFA719EC9DA700A84855 /* HttpController.swift */; };
 		D2AB89AE19EC5F030066586C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AB89AD19EC5F030066586C /* AppDelegate.swift */; };
 		D2AB89B019EC5F030066586C /* PlayListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AB89AF19EC5F030066586C /* PlayListController.swift */; };
@@ -32,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D24D4AF91A000D9500AB0237 /* StrUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrUtil.swift; sourceTree = "<group>"; };
 		D274FFA719EC9DA700A84855 /* HttpController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpController.swift; sourceTree = "<group>"; };
 		D2AB89A819EC5F030066586C /* iDouBan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDouBan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2AB89AC19EC5F030066586C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -68,6 +70,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D24D4AF41A0008DA00AB0237 /* Res */ = {
+			isa = PBXGroup;
+			children = (
+				D2C9137119FAF0D000EDC86B /* player_pause.png */,
+				D2D4CFDD19EE2E0C009C23CD /* detail.jpg */,
+			);
+			name = Res;
+			sourceTree = "<group>";
+		};
+		D24D4AF51A000D0400AB0237 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D2AB89AF19EC5F030066586C /* PlayListController.swift */,
+				D274FFA719EC9DA700A84855 /* HttpController.swift */,
+				D2AB89CD19EC62E80066586C /* MusicSectionController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		D24D4AF61A000D2D00AB0237 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D2B9FEC319FC2E7000CDF905 /* CustomerTableViewCell.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D24D4AF71A000D4E00AB0237 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D2AB89B119EC5F030066586C /* Main.storyboard */,
+				D2B9FEC119FC2AB500CDF905 /* CustomerTableViewCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		D24D4AF81A000D7000AB0237 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				D24D4AF91A000D9500AB0237 /* StrUtil.swift */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
 		D2AB899F19EC5F030066586C = {
 			isa = PBXGroup;
 			children = (
@@ -89,15 +135,12 @@
 		D2AB89AA19EC5F030066586C /* iDouBan */ = {
 			isa = PBXGroup;
 			children = (
-				D2B9FEC119FC2AB500CDF905 /* CustomerTableViewCell.xib */,
-				D2B9FEC319FC2E7000CDF905 /* CustomerTableViewCell.swift */,
-				D2C9137119FAF0D000EDC86B /* player_pause.png */,
-				D2D4CFDD19EE2E0C009C23CD /* detail.jpg */,
+				D24D4AF81A000D7000AB0237 /* Util */,
+				D24D4AF71A000D4E00AB0237 /* View */,
+				D24D4AF61A000D2D00AB0237 /* Model */,
+				D24D4AF51A000D0400AB0237 /* Controller */,
+				D24D4AF41A0008DA00AB0237 /* Res */,
 				D2AB89AD19EC5F030066586C /* AppDelegate.swift */,
-				D2AB89AF19EC5F030066586C /* PlayListController.swift */,
-				D274FFA719EC9DA700A84855 /* HttpController.swift */,
-				D2AB89CD19EC62E80066586C /* MusicSectionController.swift */,
-				D2AB89B119EC5F030066586C /* Main.storyboard */,
 				D2AB89B419EC5F030066586C /* Images.xcassets */,
 				D2AB89B619EC5F030066586C /* LaunchScreen.xib */,
 				D2AB89AB19EC5F030066586C /* Supporting Files */,
@@ -238,6 +281,7 @@
 				D2AB89B019EC5F030066586C /* PlayListController.swift in Sources */,
 				D2AB89AE19EC5F030066586C /* AppDelegate.swift in Sources */,
 				D274FFA819EC9DA700A84855 /* HttpController.swift in Sources */,
+				D24D4AFA1A000D9500AB0237 /* StrUtil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

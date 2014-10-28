@@ -98,6 +98,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Channel" id="Fd7-Qf-VL0">
                             <connections>
                                 <action selector="BtnClicked:" destination="vXZ-lx-hvc" id="bkM-9g-sNc"/>
+                                <segue destination="Ibr-5L-DXX" kind="show" id="Eum-ae-HPR"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

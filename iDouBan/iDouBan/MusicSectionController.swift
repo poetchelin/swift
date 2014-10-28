@@ -9,17 +9,31 @@
 import UIKit
 
 class MusicSectionController: UITableViewController,HttpProtocol {
-    
+	
+	/*
+	=================================================================================
+	Constant
+	=================================================================================
+	*/
     let musicSectionURL = "http://www.douban.com/j/app/radio/channels"
-    
+	let httpController = HttpController()
+	
+	/*
+	=================================================================================
+	Common Class Inner Variable
+	=================================================================================
+	*/
+	
     var musicInSection = "http://www.douban.com/j/app/radio/people?app_name=radio_desktop_win&version=100&user_id=&expire=&token=&sid=&h=&channel="
     
     var musicSection: NSArray = NSArray()
-    
-    let httpController = HttpController()
-    
-    var musicLoader : SongLoadDelegate?
+    var delegate : SongLoadDelegate?
 
+	/*
+	=================================================================================
+	The Override Implementation of Super Class
+	=================================================================================
+	*/
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -31,7 +45,12 @@ class MusicSectionController: UITableViewController,HttpProtocol {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
+	
+	/*
+	=================================================================================
+	The Override Implementation of UITableViewController
+	=================================================================================
+	*/
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.musicSection.count
     }
@@ -47,18 +66,22 @@ class MusicSectionController: UITableViewController,HttpProtocol {
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-		
-		let row: Character = Character(UnicodeScalar(indexPath.row))
         
         //load selected data
+		let row: Character = Character(UnicodeScalar(indexPath.row))
 		var resultURL = musicInSection + "\(indexPath.row)&type=n"
 		
 		//update playList
-		musicLoader?.didLoad(resultURL)
+		delegate?.didLoad(resultURL)
         
         self.navigationController?.popViewControllerAnimated(true)
     }
-    
+	
+	/*
+	=================================================================================
+	The Implementation of Private Method.
+	=================================================================================
+	*/
     func didReceiveResults(result: NSDictionary) {
         if (result["channels"] != nil) {
             self.musicSection = result["channels"]! as NSArray
