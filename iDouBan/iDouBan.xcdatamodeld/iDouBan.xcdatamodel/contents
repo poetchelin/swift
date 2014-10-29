@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6252" systemVersion="14A388b" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Section" syncable="YES">
-        <attribute name="sectionName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="channel_id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Section" positionX="-63" positionY="-18" width="128" height="60"/>
+        <element name="Section" positionX="-63" positionY="-18" width="128" height="73"/>
     </elements>
 </model>

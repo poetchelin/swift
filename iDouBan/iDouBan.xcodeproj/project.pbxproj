@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D24D4AFA1A000D9500AB0237 /* StrUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24D4AF91A000D9500AB0237 /* StrUtil.swift */; };
-		D25719F01A00798200835384 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D25719EE1A00798200835384 /* Model.xcdatamodeld */; };
+		D25719F01A00798200835384 /* iDouBan.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D25719EE1A00798200835384 /* iDouBan.xcdatamodeld */; };
 		D274FFA819EC9DA700A84855 /* HttpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D274FFA719EC9DA700A84855 /* HttpController.swift */; };
 		D2AB89AE19EC5F030066586C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AB89AD19EC5F030066586C /* AppDelegate.swift */; };
 		D2AB89B019EC5F030066586C /* PlayListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AB89AF19EC5F030066586C /* PlayListController.swift */; };
@@ -35,7 +35,7 @@
 
 /* Begin PBXFileReference section */
 		D24D4AF91A000D9500AB0237 /* StrUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrUtil.swift; sourceTree = "<group>"; };
-		D25719EF1A00798200835384 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		D25719EF1A00798200835384 /* iDouBan.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iDouBan.xcdatamodel; sourceTree = "<group>"; };
 		D274FFA719EC9DA700A84855 /* HttpController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpController.swift; sourceTree = "<group>"; };
 		D2AB89A819EC5F030066586C /* iDouBan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDouBan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2AB89AC19EC5F030066586C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -116,10 +116,17 @@
 			name = Util;
 			sourceTree = "<group>";
 		};
+		D27059511A013BB800AD47B6 /* CoreDatas */ = {
+			isa = PBXGroup;
+			children = (
+				D25719EE1A00798200835384 /* iDouBan.xcdatamodeld */,
+			);
+			name = CoreDatas;
+			sourceTree = "<group>";
+		};
 		D2AB899F19EC5F030066586C = {
 			isa = PBXGroup;
 			children = (
-				D25719EE1A00798200835384 /* Model.xcdatamodeld */,
 				D2AB89AA19EC5F030066586C /* iDouBan */,
 				D2AB89C019EC5F030066586C /* iDouBanTests */,
 				D2AB89A919EC5F030066586C /* Products */,
@@ -138,6 +145,7 @@
 		D2AB89AA19EC5F030066586C /* iDouBan */ = {
 			isa = PBXGroup;
 			children = (
+				D27059511A013BB800AD47B6 /* CoreDatas */,
 				D24D4AF81A000D7000AB0237 /* Util */,
 				D24D4AF71A000D4E00AB0237 /* View */,
 				D24D4AF61A000D2D00AB0237 /* Model */,
@@ -282,7 +290,7 @@
 				D2B9FEC419FC2E7000CDF905 /* CustomerTableViewCell.swift in Sources */,
 				D2AB89CE19EC62E80066586C /* MusicSectionController.swift in Sources */,
 				D2AB89B019EC5F030066586C /* PlayListController.swift in Sources */,
-				D25719F01A00798200835384 /* Model.xcdatamodeld in Sources */,
+				D25719F01A00798200835384 /* iDouBan.xcdatamodeld in Sources */,
 				D2AB89AE19EC5F030066586C /* AppDelegate.swift in Sources */,
 				D274FFA819EC9DA700A84855 /* HttpController.swift in Sources */,
 				D24D4AFA1A000D9500AB0237 /* StrUtil.swift in Sources */,
@@ -491,14 +499,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		D25719EE1A00798200835384 /* Model.xcdatamodeld */ = {
+		D25719EE1A00798200835384 /* iDouBan.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				D25719EF1A00798200835384 /* Model.xcdatamodel */,
+				D25719EF1A00798200835384 /* iDouBan.xcdatamodel */,
 			);
-			currentVersion = D25719EF1A00798200835384 /* Model.xcdatamodel */;
-			path = Model.xcdatamodeld;
-			sourceTree = "<group>";
+			currentVersion = D25719EF1A00798200835384 /* iDouBan.xcdatamodel */;
+			path = iDouBan.xcdatamodeld;
+			sourceTree = SOURCE_ROOT;
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
