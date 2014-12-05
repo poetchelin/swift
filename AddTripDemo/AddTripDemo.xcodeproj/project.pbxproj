@@ -1,0 +1,451 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D286A14E1A1AA4C50002028D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D286A14D1A1AA4C50002028D /* AppDelegate.swift */; };
+		D286A1511A1AA4C50002028D /* AddTripDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D286A14F1A1AA4C50002028D /* AddTripDemo.xcdatamodeld */; };
+		D286A1531A1AA4C50002028D /* TripListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D286A1521A1AA4C50002028D /* TripListViewController.swift */; };
+		D286A1561A1AA4C50002028D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D286A1541A1AA4C50002028D /* Main.storyboard */; };
+		D286A1581A1AA4C50002028D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D286A1571A1AA4C50002028D /* Images.xcassets */; };
+		D286A15B1A1AA4C50002028D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D286A1591A1AA4C50002028D /* LaunchScreen.xib */; };
+		D286A1671A1AA4C50002028D /* AddTripDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D286A1661A1AA4C50002028D /* AddTripDemoTests.swift */; };
+		D286A1721A1AC0D50002028D /* FillFormCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D286A1701A1AC0D50002028D /* FillFormCell.xib */; };
+		D286A1731A1AC0D50002028D /* FillFormCellInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D286A1711A1AC0D50002028D /* FillFormCellInfo.swift */; };
+		D2CC09581A1AC3680081BD6E /* AddNewTripController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CC09571A1AC3680081BD6E /* AddNewTripController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D286A1611A1AA4C50002028D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D286A1401A1AA4C50002028D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D286A1471A1AA4C50002028D;
+			remoteInfo = AddTripDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D286A1481A1AA4C50002028D /* AddTripDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AddTripDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D286A14C1A1AA4C50002028D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D286A14D1A1AA4C50002028D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D286A1501A1AA4C50002028D /* AddTripDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AddTripDemo.xcdatamodel; sourceTree = "<group>"; };
+		D286A1521A1AA4C50002028D /* TripListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListViewController.swift; sourceTree = "<group>"; };
+		D286A1551A1AA4C50002028D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D286A1571A1AA4C50002028D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D286A15A1A1AA4C50002028D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D286A1601A1AA4C50002028D /* AddTripDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AddTripDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D286A1651A1AA4C50002028D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D286A1661A1AA4C50002028D /* AddTripDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTripDemoTests.swift; sourceTree = "<group>"; };
+		D286A1701A1AC0D50002028D /* FillFormCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FillFormCell.xib; sourceTree = "<group>"; };
+		D286A1711A1AC0D50002028D /* FillFormCellInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FillFormCellInfo.swift; sourceTree = "<group>"; };
+		D2CC09571A1AC3680081BD6E /* AddNewTripController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewTripController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D286A1451A1AA4C50002028D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D286A15D1A1AA4C50002028D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D286A13F1A1AA4C50002028D = {
+			isa = PBXGroup;
+			children = (
+				D286A14A1A1AA4C50002028D /* AddTripDemo */,
+				D286A1631A1AA4C50002028D /* AddTripDemoTests */,
+				D286A1491A1AA4C50002028D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D286A1491A1AA4C50002028D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D286A1481A1AA4C50002028D /* AddTripDemo.app */,
+				D286A1601A1AA4C50002028D /* AddTripDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D286A14A1A1AA4C50002028D /* AddTripDemo */ = {
+			isa = PBXGroup;
+			children = (
+				D286A1701A1AC0D50002028D /* FillFormCell.xib */,
+				D286A1711A1AC0D50002028D /* FillFormCellInfo.swift */,
+				D286A14D1A1AA4C50002028D /* AppDelegate.swift */,
+				D286A1521A1AA4C50002028D /* TripListViewController.swift */,
+				D286A1541A1AA4C50002028D /* Main.storyboard */,
+				D286A1571A1AA4C50002028D /* Images.xcassets */,
+				D286A1591A1AA4C50002028D /* LaunchScreen.xib */,
+				D286A14F1A1AA4C50002028D /* AddTripDemo.xcdatamodeld */,
+				D286A14B1A1AA4C50002028D /* Supporting Files */,
+				D2CC09571A1AC3680081BD6E /* AddNewTripController.swift */,
+			);
+			path = AddTripDemo;
+			sourceTree = "<group>";
+		};
+		D286A14B1A1AA4C50002028D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D286A14C1A1AA4C50002028D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D286A1631A1AA4C50002028D /* AddTripDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				D286A1661A1AA4C50002028D /* AddTripDemoTests.swift */,
+				D286A1641A1AA4C50002028D /* Supporting Files */,
+			);
+			path = AddTripDemoTests;
+			sourceTree = "<group>";
+		};
+		D286A1641A1AA4C50002028D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D286A1651A1AA4C50002028D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D286A1471A1AA4C50002028D /* AddTripDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D286A16A1A1AA4C50002028D /* Build configuration list for PBXNativeTarget "AddTripDemo" */;
+			buildPhases = (
+				D286A1441A1AA4C50002028D /* Sources */,
+				D286A1451A1AA4C50002028D /* Frameworks */,
+				D286A1461A1AA4C50002028D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AddTripDemo;
+			productName = AddTripDemo;
+			productReference = D286A1481A1AA4C50002028D /* AddTripDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D286A15F1A1AA4C50002028D /* AddTripDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D286A16D1A1AA4C50002028D /* Build configuration list for PBXNativeTarget "AddTripDemoTests" */;
+			buildPhases = (
+				D286A15C1A1AA4C50002028D /* Sources */,
+				D286A15D1A1AA4C50002028D /* Frameworks */,
+				D286A15E1A1AA4C50002028D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D286A1621A1AA4C50002028D /* PBXTargetDependency */,
+			);
+			name = AddTripDemoTests;
+			productName = AddTripDemoTests;
+			productReference = D286A1601A1AA4C50002028D /* AddTripDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D286A1401A1AA4C50002028D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = cx363;
+				TargetAttributes = {
+					D286A1471A1AA4C50002028D = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					D286A15F1A1AA4C50002028D = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = D286A1471A1AA4C50002028D;
+					};
+				};
+			};
+			buildConfigurationList = D286A1431A1AA4C50002028D /* Build configuration list for PBXProject "AddTripDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D286A13F1A1AA4C50002028D;
+			productRefGroup = D286A1491A1AA4C50002028D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D286A1471A1AA4C50002028D /* AddTripDemo */,
+				D286A15F1A1AA4C50002028D /* AddTripDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D286A1461A1AA4C50002028D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D286A1721A1AC0D50002028D /* FillFormCell.xib in Resources */,
+				D286A1561A1AA4C50002028D /* Main.storyboard in Resources */,
+				D286A15B1A1AA4C50002028D /* LaunchScreen.xib in Resources */,
+				D286A1581A1AA4C50002028D /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D286A15E1A1AA4C50002028D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D286A1441A1AA4C50002028D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2CC09581A1AC3680081BD6E /* AddNewTripController.swift in Sources */,
+				D286A1731A1AC0D50002028D /* FillFormCellInfo.swift in Sources */,
+				D286A1531A1AA4C50002028D /* TripListViewController.swift in Sources */,
+				D286A14E1A1AA4C50002028D /* AppDelegate.swift in Sources */,
+				D286A1511A1AA4C50002028D /* AddTripDemo.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D286A15C1A1AA4C50002028D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D286A1671A1AA4C50002028D /* AddTripDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D286A1621A1AA4C50002028D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D286A1471A1AA4C50002028D /* AddTripDemo */;
+			targetProxy = D286A1611A1AA4C50002028D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D286A1541A1AA4C50002028D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D286A1551A1AA4C50002028D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D286A1591A1AA4C50002028D /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D286A15A1A1AA4C50002028D /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D286A1681A1AA4C50002028D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D286A1691A1AA4C50002028D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D286A16B1A1AA4C50002028D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AddTripDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D286A16C1A1AA4C50002028D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AddTripDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D286A16E1A1AA4C50002028D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AddTripDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AddTripDemo.app/AddTripDemo";
+			};
+			name = Debug;
+		};
+		D286A16F1A1AA4C50002028D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AddTripDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AddTripDemo.app/AddTripDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D286A1431A1AA4C50002028D /* Build configuration list for PBXProject "AddTripDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D286A1681A1AA4C50002028D /* Debug */,
+				D286A1691A1AA4C50002028D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D286A16A1A1AA4C50002028D /* Build configuration list for PBXNativeTarget "AddTripDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D286A16B1A1AA4C50002028D /* Debug */,
+				D286A16C1A1AA4C50002028D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D286A16D1A1AA4C50002028D /* Build configuration list for PBXNativeTarget "AddTripDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D286A16E1A1AA4C50002028D /* Debug */,
+				D286A16F1A1AA4C50002028D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D286A14F1A1AA4C50002028D /* AddTripDemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D286A1501A1AA4C50002028D /* AddTripDemo.xcdatamodel */,
+			);
+			currentVersion = D286A1501A1AA4C50002028D /* AddTripDemo.xcdatamodel */;
+			path = AddTripDemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D286A1401A1AA4C50002028D /* Project object */;
+}
